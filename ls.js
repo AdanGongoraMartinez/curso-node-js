@@ -1,4 +1,4 @@
-const fs = requiere('node:fs/promises')
+const fs = require('node:fs/promises')
 
 //* no promises
 /* fs.readdir('.', (err, files) => {
