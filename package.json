@@ -15,5 +15,11 @@
   "license": "ISC",
   "dependencies": {
     "picocolors": "1.0.1"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
   }
 }
