@@ -36,8 +36,10 @@ const processRequest = (req, res) => {
 
             // 201 - creacion de recurso
             res.writeHead(201,{'Content-Type: application/json; charset=utf8'})
-            return res.end(JSON.stringify(data))
+            res.end(JSON.stringify(data))
           })
+
+          break
         }
         default:{
           res.statusCode = 404
