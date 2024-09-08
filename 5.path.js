@@ -4,7 +4,7 @@ const path = require('node:path')
 console.log(path.sep)
 
 // unir rutas con path.join
-const filePath = path.join('content','subfolder','test.txt')
+const filePath = path.join('content', 'subfolder', 'test.txt')
 console.log(filePath)
 
 const base = path.basename('/tmp/secret/password.txt')

@@ -7,7 +7,7 @@ console.log(process.argv)
 // podemos controlar eventos del proceso
 /* process.on('exit', () => {
     //* Limpiar recursos
-})*/
+}) */
 
 // current working directory
 console.log(process.cwd())
