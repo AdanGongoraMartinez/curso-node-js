@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon 1.http.js"
+    "dev:1":"nodemon 1.http.js",
+    "dev:2":"nodemon 2.routing.js"
+
   },
   "keywords": [],
   "author": "",
