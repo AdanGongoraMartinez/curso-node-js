@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev:1":"nodemon 1.http.js",
-    "dev:2":"nodemon 2.routing.js"
-
+    "dev:1": "nodemon 1.http.js",
+    "dev:2": "nodemon 2.routing.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "express": "^4.19.2",
     "nodemon": "^3.1.4",
     "standard": "^17.1.0"
   },

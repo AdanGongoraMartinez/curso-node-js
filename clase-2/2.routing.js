@@ -28,14 +28,18 @@ const processRequest = (req, res) => {
 
           // escuchar el evento data
           req.on('data', chunk => {
-            body += chunk.toString
+            body += chunk.toString()
           })
 
           req.on('end', () => {
             const data = JSON.parse(body)
 
             // 201 - creacion de recurso
-            res.writeHead(201,{'Content-Type: application/json; charset=utf8'})
+            res.writeHead(201, { 'Content-Type': 'application/json; charset=utf8' })
+            /* res.statusCode = 201
+            res.setHeader('Content-Type', 'application/json; charset=utf8') */
+
+            data.timestamp = Date.now()
             res.end(JSON.stringify(data))
           })
 
