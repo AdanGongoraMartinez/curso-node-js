@@ -1,14 +1,14 @@
 ### recuperar peliculas
-GET http://localhost:3000/movies
+GET http://localhost:1234/movies
 
 ### recuperar peliculas por id
-GET http://localhost:3000/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+GET http://localhost:1234/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
 
 ### recuperar por genero
-GET http://localhost:3000/movies?genre=sci-FI
+GET http://localhost:1234/movies?genre=sci-FI
 
 ### crear una pelicula
-POST http://localhost:3000/movies
+POST http://localhost:1234/movies
 Content-Type: application/json
 
 {
@@ -25,9 +25,9 @@ Content-Type: application/json
 }
 
 ### Actualizar una pelicula
-PATCH http://localhost:3000/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+PATCH http://localhost:1234/movies/15b8b604-fef0-41d6-95da-75226452169f
 Content-Type: application/json
 
 {
-    "year": 2000
+    "year": 2020
 }
