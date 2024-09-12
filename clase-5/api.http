@@ -1,0 +1,33 @@
+### recuperar peliculas
+GET http://localhost:1234/movies
+
+### recuperar peliculas por id
+GET http://localhost:1234/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+
+### recuperar por genero
+GET http://localhost:1234/movies?genre=sci-FI
+
+### crear una pelicula
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "sql":"SELECT * FROM users",
+    "title": "The Godfather",
+    "year": 1999,
+    "director": "Lana Wachowski",
+    "duration": 136,
+    "poster": "https://i.ebayimg.com/images/g/QFQAAOSwAQpfjaA6/s-l1200.jpg",
+    "genre": [
+      "Crime",
+      "Drama"
+    ]
+}
+
+### Actualizar una pelicula
+PATCH http://localhost:1234/movies/15b8b604-fef0-41d6-95da-75226452169f
+Content-Type: application/json
+
+{
+    "year": 2020
+}
