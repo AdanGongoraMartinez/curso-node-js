@@ -1,6 +1,7 @@
 import express, { json } from 'express'
 import { createMoviesRouter } from './routes/movies.routes.js'
 import { corsMiddleware } from './middlewares/cors.js'
+// import 'dotenv/config' // cargar variables de entorno
 
 // leer el json en ESmodules
 // *********** Opcion 1 *************

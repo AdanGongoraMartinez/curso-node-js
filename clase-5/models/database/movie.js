@@ -1,6 +1,6 @@
 import mysql from 'mysql2/promise'
 
-const config = {
+const DEFAULT_CONFIG = {
   host: '192.168.1.105',
   user: 'node',
   password: 'node',
@@ -8,7 +8,8 @@ const config = {
   database: 'moviesdb'
 }
 
-const connection = await mysql.createConnection(config)
+const connectionString = process.env.DATABASE_URL ?? DEFAULT_CONFIG
+const connection = await mysql.createConnection(connectionString)
 
 export class MovieModel {
   // to do > obetener geners
