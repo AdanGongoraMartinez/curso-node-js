@@ -3,19 +3,19 @@ import { MovieController } from '../controllers/movies.js'
 import { MovieModel } from '../models/database/movie.js'
 
 export const createMoviesRouter = ({ movieModel }) => {
-    const moviesRouter = Router()
+  const moviesRouter = Router()
 
-    const movieController = new MovieController({ movieModel: MovieModel })
+  const movieController = new MovieController({ movieModel: MovieModel })
 
-    moviesRouter.get('/', movieController.getAll)
+  moviesRouter.get('/', movieController.getAll)
 
-    moviesRouter.get('/:id', movieController.getById)
+  moviesRouter.get('/:id', movieController.getById)
 
-    moviesRouter.post('/', movieController.create)
+  moviesRouter.post('/', movieController.create)
 
-    moviesRouter.patch('/:id', movieController.update)
+  moviesRouter.patch('/:id', movieController.update)
 
-    moviesRouter.delete('/:id', movieController.delete)
+  moviesRouter.delete('/:id', movieController.delete)
 
-    return moviesRouter
+  return moviesRouter
 }

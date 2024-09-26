@@ -22,7 +22,6 @@ export const createApp = ({ movieModel }) => {
 
   app.use(corsMiddleware())
 
-  // recuperar TODAS las peliculas
   // routing
   app.use('/movies', createMoviesRouter({ movieModel }))
 
